@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body id="dos">
+    <h1>Pide tres numeros y obtener el promedio</h1>
+    <br>
+    <input id="input" class="form-control" placeholder="Ingresa el primer numero">
+    <br>
+    <input id="input2" class="form-control" placeholder="Ingresa el segundo numero">
+    <br>
+    <input id="input3" class="form-control" placeholder="Ingresa el tercer numero">
+    <br>
+    <button id="btn" class="btn btn-primary" onclick="promedio()">Promedio</button>
+
+</body>
+<script>
+    function promedio() {
+        var num1 = document.getElementById("input").value;
+        var num2 = document.getElementById("input2").value;
+        var num3 = document.getElementById("input3").value;
+        var promedio = (parseInt(num1) + parseInt(num2) + parseInt(num3)) / 3;
+        alert("El promedio es: " + promedio);
+    }
+</script>
+
+</html>
